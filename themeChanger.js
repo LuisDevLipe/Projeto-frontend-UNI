@@ -4,7 +4,7 @@ const colors = {
 	graydarker: "#222831",
 	offwhite: "#EEEEEE",
 }
-// const headers = Array.from([ 
+// const headers = Array.from([
 // 	document.getElementById("acessibilidade"),
 // 	 document.getElementById("principal"),
 // 	 document.getElementById("categoria")
@@ -36,12 +36,14 @@ function setDarkTheme() {
 	lightElements.forEach((element) => {
 		// console.log(element,element.classList)
 		if ([...element.classList].includes("lightspecial")) {
-			element.classList.add("darker")
-			element.classList.remove("lightspecial")
+			// element.classList.add("darker")
+			// element.classList.remove("lightspecial")
+			element.classList.replace("lightspecial", "darker")
 		} else {
-			element.classList.add("dark")
+			// 	element.classList.add("dark")
+			// element.classList.remove("lightdefault")
+			element.classList.replace("lightdefault", "dark")
 		}
-		element.classList.remove("lightdefault")
 	})
 	return setCurrentTheme("dark")
 }
@@ -51,11 +53,13 @@ function setLightTheme() {
 	searchbar.style.borderRadius = "0"
 	darkElements.forEach((element) => {
 		if ([...element.classList].includes("darker")) {
-			element.classList.remove("darker")
-			element.classList.add("lightdefault")
+			// element.classList.remove("darker")
+			// element.classList.add("lightdefault")
+			element.classList.replace("darker", "lightdefault")
 		} else {
-			element.classList.remove("dark")
-			element.classList.add("lightspecial")
+			// element.classList.remove("dark")
+			// element.classList.add("lightspecial")
+			element.classList.replace("dark", "lightspecial")
 		}
 	})
 	// headers.forEach(h =>{
@@ -63,6 +67,7 @@ function setLightTheme() {
 	// })
 	// headers[0].classList.add("acessibilidadeTheme")
 	// return setCurrentTheme("light")
+	return setCurrentTheme("light")
 }
 
 btnThemeDark.addEventListener("click", (e) => {

@@ -13,42 +13,79 @@
 		<link rel="stylesheet" href="./headers.css" />
 		<link rel="stylesheet" href="./contents.css" />
 		<link rel="stylesheet" href="./mediaquery.css" />
-		<link rel="stylesheet" href="./themeChanging.css">
-		<link rel="stylesheet" href="./pages/login/login.css">
-		<link rel="stylesheet" href="./pages/cinema/cinema.css">
-		<link rel="stylesheet" href="./pages/noticias/noticias.css">
-		<link rel="stylesheet" href="./pages/shows/shows.css">
-		<link rel="stylesheet" href="./pages/teatro/teatro.css">
+		<link rel="stylesheet" href="./themeChanging.css" />
+		<link rel="stylesheet" href="./pages/login/login.css" />
+		<link rel="stylesheet" href="./pages/cinema/cinema.css" />
+		<link rel="stylesheet" href="./pages/noticias/noticias.css" />
+		<link rel="stylesheet" href="./pages/shows/shows.css" />
+		<link rel="stylesheet" href="./pages/teatro/teatro.css" />
+		<link rel="stylesheet" href="./pages/esportes/esportes.css" />
 	</head>
-	
+
 	<body class="lightdefault">
+		<div class="modal-wrapper">
+			<article class="modal-box lightdefault">
+				<img src="./assets/LOGO/LOGO.png" alt=" Logo da empresa" />
+				<div class="text">
+					<h3>Este site possui funções de acessibilidade.</h3>
+					<p>
+						Nos preocupamos com a a inclusão digital, e justamente por isso nosso site
+						estará sob constante evolução.
+					</p>
+					<p>
+						Temos o intuito de disponibilizar uma plataforma 100% acessível e estamos
+						nos esforçando para tal.
+					</p>
+
+					<p>
+						A equipe de desenvolvimento da <em>Multiverso Cultural&copy;</em> agradece a
+						sua visita.
+					</p>
+				</div>
+				<div class="action-close">
+					<button class="close-modal">Fechar</button>
+				</div>
+			</article>
+		</div>
 		<header class="acessibilidade lightspecial" id="acessibilidade">
 			<button id="btnPlus" aria-label="Aumentar Texto">Aumentar texto +</button>
 			<button id="btnMinus" aria-label="Diminuir Texto">Diminuir texto -</button>
 			<button id="theme-dark" aria-label="Trocar para Tema Escuro">Escurecer Tema</button>
 			<button id="theme-light" aria-label="Trocar para Tema Claro">Clarear Tema</button>
 		</header>
-		<header id="principal" class="lightdefault">
-			<nav>
-				<a href="./index.html" class="logo">MULTIVERSO CULTURAL</a>
+		<header id="principal" class="lightdefault desktop">
+			<button class="menu-toggle"><span></span><span></span><span></span></button>
+			<nav class="navigation">
+				<div class="logo-wrapper">
+					<span class="logo-icon"></span>
+					<a href="./index.html" class="logo">MULTIVERSO&nbsp;CULTURAL</a>
+				</div>
+
 				<a href="#">Todos os eventos</a>
 				<a href="#">Todas as cidades</a>
 				<form action="" class="lightspecial">
 					<input id="searchbar" type="text" placeholder="Buscar artistas e eventos" />
 					<input type="submit" value="" aria-label="Pesquisar" />
 				</form>
+			</nav>
+			<nav class="actions">
 				<button type="menu" aria-label="Seleção de Idiomas">
 					<img
-					class="icon"
-					src="./assets/icons/language_FILL0_wght400_GRAD0_opsz24.svg"
-					alt=""
+						class="icon"
+						src="./assets/icons/language_FILL0_wght400_GRAD0_opsz24.svg"
+						alt=""
 					/>
 				</button>
-				<button type="link" ajax-link aria-label="Conta do Usuário" href="./pages/login.html">
+				<button
+					type="link"
+					ajax-link
+					aria-label="Conta do Usuário"
+					href="./pages/login/login.html"
+				>
 					<img
-					class="icon"
-					src="./assets/icons/person_FILL0_wght400_GRAD0_opsz24.svg"
-					alt="Acessar conta do usuário"
+						class="icon"
+						src="./assets/icons/person_FILL0_wght400_GRAD0_opsz24.svg"
+						alt="Acessar conta do usuário"
 					/>
 				</button>
 			</nav>
@@ -65,8 +102,6 @@
 			</nav>
 		</section>
 		<div contentContainer>
-			
-			
 			<section class="banner">
 				<img src="./assets/imgs/jcg3qelzt6bb1.jpg" alt="" />
 				<span>
@@ -74,12 +109,12 @@
 					<p>Alguma coisa, uma notícia ou novidade ...</p>
 				</span>
 			</section>
-			
+
 			<main class="content-container" mainContent>
 				<!-- <nav>
 					
 				</nav> -->
-				<section class=" theme-conf lightspecial">
+				<section class="theme-conf lightspecial">
 					<h3>Mais vistos</h3>
 					<article class="card">
 						<figure>
@@ -93,183 +128,188 @@
 								convalarticles faciarticlesis scelerisque. Vivamus quis nulla
 								solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
 								dolor, sodales lobortis eros nec, tempus viverra tellus. Lorem ipsum
-								dolor sit amet, consectetur adipiscing earticlet. Morbi convalarticles
-								faciarticlesis scelerisque. Vivamus quis nulla solarticlecitudin,
-								iacuarticles enim quis, semper sapien. Sed nulla dolor, sodales lobortis
-								eros nec, tempus viverra tellus. Lorem ipsum dolor sit amet, consectetur
-								adipiscing earticlet. Morbi convalarticles faciarticlesis scelerisque.
-								Vivamus quis nulla solarticlecitudin, iacuarticles enim quis, semper
-								sapien. Sed nulla dolor, sodales lobortis eros nec, tempus viverra
-							tellus.
-						</p>
-						<time datetime="2024-04-18 20:09"> 18 de Abril às 20:09. </time>
-					</div>
-				</article>
-				<article class="card">
-					<figure>
-						<img src="./assets/imgs/maxresdefault.jpg" alt="Imagem de uma notícia" />
-						<figcaption></figcaption>
-					</figure>
-					<div>
-						<h1>Lorem Ipsum</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing earticlet. Morbi
-							convalarticles faciarticlesis scelerisque. Vivamus quis nulla
-							solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
-							dolor, sodales lobortis eros nec, tempus viverra tellus. Lorem ipsum
-							dolor sit amet, consectetur adipiscing earticlet. Morbi convalarticles
-							faciarticlesis scelerisque. Vivamus quis nulla solarticlecitudin,
-							iacuarticles enim quis, semper sapien. Sed nulla dolor, sodales lobortis
-							eros nec, tempus viverra tellus.
-						</p>
-						<time datetime="2024-04-18 20:09"> 18 de Abril às 20:09. </time>
-					</div>
-				</article>
-				<article class="card">
-					<figure>
-						<img src="./assets/imgs/rdr2_uw.png" alt="Imagem de uma notícia" />
-						<figure></figure>
-					</figure>
-					<div>
-						<h1>Lorem Ipsum</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing earticlet. Morbi
-							convalarticles faciarticlesis scelerisque. Vivamus quis nulla
-							solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
-							dolor, sodales lobortis eros nec, tempus viverra tellus. Lorem ipsum
-							dolor sit amet, consectetur adipiscing earticlet. Morbi convalarticles
-							faciarticlesis scelerisque. Vivamus quis nulla solarticlecitudin,
-							iacuarticles enim quis, semper sapien. Sed nulla dolor, sodales lobortis
-							eros nec, tempus viverra tellus.
-						</p>
-						<time datetime="2024-04-18 20:09"> 18 de Abril às 20:09. </time>
-					</div>
-				</article>
-				<article class="card">
-					<figure>
-						<img
-						src="./assets/imgs/Chico-Moedas-pod-delas-Reproducao.webp"
-						alt="Imagem de uma notícia"
-						/>
-						<figcaption></figcaption>
-					</figure>
-					<div>
-						<h1>Eu Tenteeeei</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing earticlet. Morbi
-							convalarticles faciarticlesis scelerisque. Vivamus quis nulla
-							solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
-							dolor, sodales lobortis eros nec, tempus viverra tellus. Lorem ipsum
-							dolor sit amet, consectetur adipiscing earticlet. Morbi convalarticles
-							faciarticlesis scelerisque. Vivamus quis nulla solarticlecitudin,
-							iacuarticles enim quis, semper sapien. Sed nulla dolor, sodales lobortis
-							eros nec, tempus viverra tellus.
-						</p>
-						<time datetime="2024-04-18 20:09"> 18 de Abril às 20:09. </time>
-					</div>
-				</article>
-			</section>
-			<aside class="theme-conf lightspecial">
-				<nav>
-					<div class="card">
-						<img src="./assets/imgs/ded.jpeg" alt="" />
-						<span>
-							<p>Interestelar 2</p>
-							<small>Notícias</small>
-							<p>Veja quando Lançará o filme Interestelar 2...</p>
-						</span>
-					</div>
-					<div class="card">
-						<img
-						src="./assets/imgs/maxresdefault.jpg"
-						alt="Imagem usada para divulgar o lançamento da música Diz aí qual é o plano?"
-						/>
-						<span>
-							<p>Diz aí, Qual é o plano ?</p>
-							<small>Notícias</small>
-							<p>Veja quando Lançará o filme Dune Awakening...</p>
-						</span>
-					</div>
-					<div class="card">
-						<img src="./assets/imgs/rdr2_uw.png" alt="" />
-						<span>
-							<p>Interestelar 2</p>
-							<small>Notícias</small>
-							<p>Veja quando Lançará o filme Interestelar 2...</p>
-						</span>
-					</div>
-					<div class="card">
-						<img src="./assets/imgs/home-cards/hellblade2.png" alt="" />
-						<span>
-							<p>Hellblade 2</p>
-							<small>Novidades...</small>
-							<p>Veja quando Lançará a sequela de Hellblade Senua's Sacrifice...</p>
-						</span>
-					</div>
-				</nav>
-			</aside>
-		</main>
-	</div>
-	<section id="sobrenos">
-		<h4>Quem somos?</h4>
-		<p>Somos uma equipe</p>
-		<ul>
-			<li>Kauan</li>
-			<li>Kehtlen</li>
-			<li>Luis Felipe</li>
-			<li>Patrick</li>
-			<li>Arthur</li>
-		</ul>
-	</section>
-	<footer class="lightspecial">
-		<ul>
-			<li>
-				<ul>
-					<li>multiverso cultural</li>
-					<li>entre em contato</li>
-					<li>quem somos nós</li>
-					<li>perguntas frequentes</li>
-					<li>políticas de privacidade</li>
-					<li>este não é um site comercial.</li>
-					<li>criado afim de concluir um projeto de faculdade</li>
-					<li>
-						não clamamos o direito de nenhuma imagem ou qualquer conteúdo de
-						terceiros utilizados neste site
-					</li>
-				</ul>
-			</li>
-			<li>
-				<ul>
-					<li>mais pesquisados</li>
-					<li>thor</li>
-					<li>capitão jamaica</li>
-					<li>homem de lata</li>
-					<li>badboys what you gonna do</li>
-				</ul>
-			</li>
-		</ul>
-		<form action="" id="newsletterForm">
-			<label for="news">Assine nossas notificações sobre eventos.</label>
-			<input
-			id="news"
-			type="text"
-			placeholder="Informe seu Melhor Email..."
-			spellcheck="false"
-			/>
-			<input type="submit" value="Quero Receber!" />
-		</form>
-		<p>&copy; 2024 - Todos os direitos NÃO reservados.</p>
-	</footer>
-	<script src="./acessibilty.js"></script>
-	<script src="./themeChanger.js"></script>
-	<script src="./ajax.js"></script>
-	<script type="text/javascript">
-		form = document.getElementById("newsletterForm")
-		form.addEventListener("submit", (e) => {
-			e.preventDefault()
-			form.children[2].value = "Obrigado Por Se Inscrever!"
-		})
+								dolor sit amet, consectetur adipiscing earticlet. Morbi
+								convalarticles faciarticlesis scelerisque. Vivamus quis nulla
+								solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
+								dolor, sodales lobortis eros nec, tempus viverra tellus. Lorem ipsum
+								dolor sit amet, consectetur adipiscing earticlet. Morbi
+								convalarticles faciarticlesis scelerisque. Vivamus quis nulla
+								solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
+								dolor, sodales lobortis eros nec, tempus viverra tellus.
+							</p>
+							<time datetime="2024-04-18 20:09"> 18 de Abril às 20:09. </time>
+						</div>
+					</article>
+					<article class="card">
+						<figure>
+							<img
+								src="./assets/imgs/maxresdefault.jpg"
+								alt="Imagem de uma notícia"
+							/>
+							<figcaption></figcaption>
+						</figure>
+						<div>
+							<h1>Lorem Ipsum</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing earticlet. Morbi
+								convalarticles faciarticlesis scelerisque. Vivamus quis nulla
+								solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
+								dolor, sodales lobortis eros nec, tempus viverra tellus. Lorem ipsum
+								dolor sit amet, consectetur adipiscing earticlet. Morbi
+								convalarticles faciarticlesis scelerisque. Vivamus quis nulla
+								solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
+								dolor, sodales lobortis eros nec, tempus viverra tellus.
+							</p>
+							<time datetime="2024-04-18 20:09"> 18 de Abril às 20:09. </time>
+						</div>
+					</article>
+					<article class="card">
+						<figure>
+							<img src="./assets/imgs/rdr2_uw.png" alt="Imagem de uma notícia" />
+							<figure></figure>
+						</figure>
+						<div>
+							<h1>Lorem Ipsum</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing earticlet. Morbi
+								convalarticles faciarticlesis scelerisque. Vivamus quis nulla
+								solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
+								dolor, sodales lobortis eros nec, tempus viverra tellus. Lorem ipsum
+								dolor sit amet, consectetur adipiscing earticlet. Morbi
+								convalarticles faciarticlesis scelerisque. Vivamus quis nulla
+								solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
+								dolor, sodales lobortis eros nec, tempus viverra tellus.
+							</p>
+							<time datetime="2024-04-18 20:09"> 18 de Abril às 20:09. </time>
+						</div>
+					</article>
+					<article class="card">
+						<figure>
+							<img
+								src="./assets/imgs/Chico-Moedas-pod-delas-Reproducao.webp"
+								alt="Imagem de uma notícia"
+							/>
+							<figcaption></figcaption>
+						</figure>
+						<div>
+							<h1>Eu Tenteeeei</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing earticlet. Morbi
+								convalarticles faciarticlesis scelerisque. Vivamus quis nulla
+								solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
+								dolor, sodales lobortis eros nec, tempus viverra tellus. Lorem ipsum
+								dolor sit amet, consectetur adipiscing earticlet. Morbi
+								convalarticles faciarticlesis scelerisque. Vivamus quis nulla
+								solarticlecitudin, iacuarticles enim quis, semper sapien. Sed nulla
+								dolor, sodales lobortis eros nec, tempus viverra tellus.
+							</p>
+							<time datetime="2024-04-18 20:09"> 18 de Abril às 20:09. </time>
+						</div>
+					</article>
+				</section>
+				<aside class="theme-conf lightspecial">
+					<nav>
+						<div class="card">
+							<img src="./assets/imgs/ded.jpeg" alt="" />
+							<span>
+								<p>Interestelar 2</p>
+								<small>Notícias</small>
+								<p>Veja quando Lançará o filme Interestelar 2...</p>
+							</span>
+						</div>
+						<div class="card">
+							<img
+								src="./assets/imgs/maxresdefault.jpg"
+								alt="Imagem usada para divulgar o lançamento da música Diz aí qual é o plano?"
+							/>
+							<span>
+								<p>Diz aí, Qual é o plano ?</p>
+								<small>Notícias</small>
+								<p>Veja quando Lançará o filme Dune Awakening...</p>
+							</span>
+						</div>
+						<div class="card">
+							<img src="./assets/imgs/rdr2_uw.png" alt="" />
+							<span>
+								<p>Interestelar 2</p>
+								<small>Notícias</small>
+								<p>Veja quando Lançará o filme Interestelar 2...</p>
+							</span>
+						</div>
+						<div class="card">
+							<img src="./assets/imgs/home-cards/hellblade2.png" alt="" />
+							<span>
+								<p>Hellblade 2</p>
+								<small>Novidades...</small>
+								<p>
+									Veja quando Lançará a sequela de Hellblade Senua's Sacrifice...
+								</p>
+							</span>
+						</div>
+					</nav>
+				</aside>
+			</main>
+		</div>
+		<section id="sobrenos">
+			<h4>Quem somos?</h4>
+			<p>Somos uma equipe</p>
+			<ul>
+				<li>Kauan</li>
+				<li>Kethleen</li>
+				<li>Luis Felipe</li>
+				<li>Patrick</li>
+				<li>Arthur</li>
+			</ul>
+		</section>
+		<footer class="lightspecial">
+			<ul>
+				<li>
+					<ul>
+						<li>multiverso cultural</li>
+						<li>entre em contato</li>
+						<li>quem somos nós</li>
+						<li>perguntas frequentes</li>
+						<li>políticas de privacidade</li>
+						<li>este não é um site comercial.</li>
+						<li>criado afim de concluir um projeto de faculdade</li>
+						<li>
+							não clamamos o direito de nenhuma imagem ou qualquer conteúdo de
+							terceiros utilizados neste site
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li>mais pesquisados</li>
+						<li>thor</li>
+						<li>capitão jamaica</li>
+						<li>homem de lata</li>
+						<li>badboys what you gonna do</li>
+					</ul>
+				</li>
+			</ul>
+			<form action="" id="newsletterForm">
+				<label for="news">Assine nossas notificações sobre eventos.</label>
+				<input
+					id="news"
+					type="text"
+					placeholder="Informe seu Melhor Email..."
+					spellcheck="false"
+				/>
+				<input type="submit" value="Quero Receber!" />
+			</form>
+			<p>&copy; 2024 - Todos os direitos NÃO reservados.</p>
+		</footer>
+		<script src="./acessibilty.js"></script>
+		<script src="./themeChanger.js"></script>
+		<script src="./menuHamburguerMobile.js"></script>
+		<script src="./ajax.js"></script>
+		<script type="text/javascript">
+			form = document.getElementById("newsletterForm")
+			form.addEventListener("submit", (e) => {
+				e.preventDefault()
+				form.children[2].value = "Obrigado Por Se Inscrever!"
+			})
 		</script>
 	</body>
-	</html>
-	
+</html>
