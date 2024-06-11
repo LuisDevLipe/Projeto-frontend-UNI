@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	function menuMobileHelper() {
 		if (window.matchMedia("(max-width: 886px)").matches) {
 			principalElem.classList.replace("desktop", "mobile")
-			principalElem.classList.add("closed", "dkaopdksaodksa")
+			principalElem.classList.add("closed")
 		} else {
 			principalElem.classList.replace("mobile", "desktop")
 			principalElem.classList.remove("closed", "open")

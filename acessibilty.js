@@ -1,6 +1,7 @@
 
 const btnPlus = document.getElementById("btnPlus")
 const btnMinus = document.getElementById("btnMinus")
+const acessibilidadeElem = document.getElementById("acessibilidade")
 
 let root = document.documentElement
 
@@ -48,19 +49,20 @@ button_close.addEventListener('click', (e)=> {
     e.preventDefault()
     modal.classList.remove('active')
     setCookie("modalAcessibilidadeShow" ,0)
+    acessibilidadeElem.classList.add("animar-area-acessibilidade")
 
 })
 
 document.addEventListener("DOMContentLoaded",function(){
 
-    if(getCookieValue() || getCookieValue() == null) {
-        setCookie("modalAcessibilidadeShow",1)
-        return modal.classList.add('active')
-    }
+    if (getCookieValue() || getCookieValue() == null) {
+		setCookie("modalAcessibilidadeShow", 1)
 
-    else if(!getCookieValue()) {
-        return setCookie( "modalAcessibilidadeShow" ,0) // ao carregar se o cookie existir reseta o cookie para nao aparecer por mais 1 dia
-    }
+		return modal.classList.add("active")
+	} else if (!getCookieValue()) {
+		acessibilidadeElem.classList.add("animar-area-acessibilidade")
+		return setCookie("modalAcessibilidadeShow", 0) // ao carregar se o cookie existir reseta o cookie para nao aparecer por mais 1 dia
+	}
 
 })
 

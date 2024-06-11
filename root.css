@@ -27,11 +27,11 @@
 }
 @font-face {
 	font-family: "DM sans";
-	src: url(/assets/fonts/DM_Sans/static/DMSans-Regular.ttf);
+	src: url(./assets/fonts/DM_Sans/static/DMSans-Regular.ttf);
 }
 @font-face {
 	font-family: "Nunito sans";
-	src: url(/assets/fonts/Nunito_Sans/static/NunitoSans_10pt-Regular.ttf);
+	src: url(./assets/fonts/Nunito_Sans/static/NunitoSans_10pt-Regular.ttf);
 }
 /* Cores que sao usadas na troca de tema */
 

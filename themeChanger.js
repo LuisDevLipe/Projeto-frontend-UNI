@@ -32,7 +32,7 @@ function setCurrentTheme(theme) {
 
 function setDarkTheme() {
 	const lightElements = Array.from(document.querySelectorAll(".lightdefault, .lightspecial"))
-	searchbar.style.borderRadius = "50px"
+	searchbar.style.borderRadius = "4px"
 	lightElements.forEach((element) => {
 		// console.log(element,element.classList)
 		if ([...element.classList].includes("lightspecial")) {

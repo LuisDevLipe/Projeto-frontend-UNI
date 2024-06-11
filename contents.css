@@ -2,21 +2,18 @@
 	height: min-content;
 	max-height: 40vh;
 
-	background: #ffffffd8;
 	overflow: hidden;
 
 	box-sizing: border-box;
 	margin: 1rem 1rem 0.5rem 1rem;
-	border-radius: 15px;
 
 	position: relative;
 }
 .banner > img {
 	display: block;
-
 	max-height: 40vh;
-	object-fit: contain;
-
+	width: 100%;
+	object-fit: cover;
 	margin: 0 auto;
 }
 .banner > span {
@@ -25,19 +22,19 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(45deg, var(--bg-color), transparent 40%);
+	background: linear-gradient(45deg, var(--gray), transparent 40%);
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
 	align-items: start;
 	padding: 2rem;
-	color: var(--text-color);
 }
 .banner > span h2 {
 	font-size: var(--big-txt);
 	line-height: var(--big-txt);
-}
-.banner > span p {
+
+	}
+	.banner > span p {
 	font-size: var(--txt-size);
 	line-height: var(--txt-size);
 }
@@ -57,7 +54,9 @@
 
 .content-container > aside nav {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
 	gap: 1rem;
 	padding: var(--txt-size);
 }
@@ -65,13 +64,12 @@
 .content-container > aside nav .card {
 	position: relative;
 
-	max-height: 216px;
-	max-width: 384px;
+	max-height: fit-content;
+	max-width: 100%;
 	overflow: hidden;
 	aspect-ratio: 16/9;
 
-	border: 1px solid black;
-	border-radius: 5px;
+	border-radius: 4px;
 }
 
 .content-container > aside nav div {
@@ -104,7 +102,7 @@
 }
 
 .content-container > section article.card {
-	border-bottom: 1px solid var(--off-white);
+	border-bottom: 2px solid var(--gray);
 	display: flex;
 	flex-flow: row wrap;
 	padding: var(--txt-size);
@@ -157,12 +155,6 @@
 	text-indent: 4ch;
 }
 
-section#sobrenos {
-	background-color: var(--bg-color);
-	color: var(--txt-color);
-	padding: var(--txt-size);
-}
-
 @keyframes gradientanimation {
 	0% {
 		background-position: 0% 50%;
@@ -176,12 +168,34 @@ section#sobrenos {
 }
 
 .theme-conf {
-	border-radius: 10px;
-	border: 1px solid rgba(80, 80, 80, 0.8);
-	box-shadow: 1px 2px 5px black;
+	border-radius: 4px;
+	border: 1px solid var(--gray);
+}
+.theme-conf.lightspecial,
+.theme-conf.lightdefault {
+	border: 1px solid rgb(196, 196, 196);
+}
+.theme-conf.dark,
+.theme-conf.darker {
+	box-shadow: 2px 2px 10px 1px var(--gray-dark);
 }
 
 #sobrenos ul li,
 footer ul li {
 	list-style-position: inside;
+	list-style-type: none;
+}
+
+
+
+#sobrenos {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 1rem;
+	padding: var(--txt-size);
+	border: 1px solid var(--gray);
+	margin: 1rem;
+	border-radius:4px ;
 }
