@@ -105,18 +105,19 @@
 	border-bottom: 2px solid var(--gray);
 	display: flex;
 	flex-flow: row wrap;
-	padding: var(--txt-size);
+	padding-bottom: var(--txt-size);
 	margin-bottom: var(--txt-size);
 	gap: 1rem;
 }
 .content-container > section article.card:last-child {
-	margin-bottom: none;
+	margin-bottom: 0;
 	border: none;
+	padding: 0;
 }
 
 .content-container > section > h3 {
 	font-size: var(--big-txt);
-
+	padding-bottom:var(--txt-size) ;
 	line-height: var(--big-txt);
 }
 
@@ -198,4 +199,24 @@ footer ul li {
 	border: 1px solid var(--gray);
 	margin: 1rem;
 	border-radius:4px ;
+}
+
+.pagination {
+	display: flex;
+	justify-content: end;
+	gap: 1rem;
+	& button {
+		display: inline-block;
+		width: fit-content;
+		padding: 0.5rem;
+		cursor: pointer;
+		border-radius: 4px;
+		box-sizing: border-box;
+		border: 2px solid transparent;
+		font-size: var(--txt-size);
+		}
+			& button:hover {
+				border:2px solid orange;
+			}
+
 }

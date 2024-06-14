@@ -50,6 +50,7 @@ button_close.addEventListener('click', (e)=> {
     modal.classList.remove('active')
     setCookie("modalAcessibilidadeShow" ,0)
     acessibilidadeElem.classList.add("animar-area-acessibilidade")
+    acessibilidadeElem.focus()
 
 })
 
@@ -61,6 +62,7 @@ document.addEventListener("DOMContentLoaded",function(){
 		return modal.classList.add("active")
 	} else if (!getCookieValue()) {
 		acessibilidadeElem.classList.add("animar-area-acessibilidade")
+        acessibilidadeElem.focus()
 		return setCookie("modalAcessibilidadeShow", 0) // ao carregar se o cookie existir reseta o cookie para nao aparecer por mais 1 dia
 	}
 
