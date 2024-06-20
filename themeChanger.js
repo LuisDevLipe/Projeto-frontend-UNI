@@ -38,11 +38,11 @@ function setDarkTheme() {
 		if ([...element.classList].includes("lightspecial")) {
 			// element.classList.add("darker")
 			// element.classList.remove("lightspecial")
-			element.classList.replace("lightspecial", "darker")
+			element.classList.replace("lightspecial", "dark")
 		} else {
 			// 	element.classList.add("dark")
 			// element.classList.remove("lightdefault")
-			element.classList.replace("lightdefault", "dark")
+			element.classList.replace("lightdefault", "darker")
 		}
 	})
 	return setCurrentTheme("dark")

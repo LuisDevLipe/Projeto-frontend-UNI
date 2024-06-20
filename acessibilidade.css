@@ -78,7 +78,7 @@
 .animar-area-acessibilidade {
 	animation-name: animar-area-acessibilidade;
 	animation-duration: 4s;
-	animation-timing-function: cubic-bezier(0.67, 1.28, 0.38, -0.23);
+	animation-timing-function:ease;
 	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	animation-iteration-count: 1;
@@ -90,11 +90,17 @@
 	0% {
 		background-color: initial;
 	}
-	50% {
-		background-color: #ff7400;
+	1% {
+		background: linear-gradient(45deg, transparent 48%, red , transparent 52%);
+		background-size: 250%;
+		background-position: left;
 	}
+	50% {
+		background-position: right;
+	}
+99% {
 
+}
 	100% {
-		background-color: initial;
 	}
 }
