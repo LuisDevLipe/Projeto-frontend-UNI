@@ -14,6 +14,10 @@
     background-color: var(--white);
     color: var(--text-color);
 }
+.lightdefault,.lightspecial,
+.dark,.darker {
+    transition: all 0.2s ease-in;
+}
 /* .acessibilidadeTheme,.categoriaTheme {
     background-color:var(--red) ;
 

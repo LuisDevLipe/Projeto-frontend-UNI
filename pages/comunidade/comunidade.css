@@ -1,0 +1,74 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.user-review {
+    background-color: #333;
+    padding: 20px;
+    border: 1px solid #ff8800;
+    border-radius: 10px;
+    width: 80%;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .review-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    float: left;
+    border: 1px solid #444;
+  }
+  
+  .review-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    float: right;
+    border: 1px solid #444;
+  }
+  
+  .review-text {
+    clear: both;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #cccccc;
+  }
+  
+  .rating {
+    font-size: 24px;
+    color: #ffd700;
+  }
+
+
+/* IMAGEM DAS AVALIAÇÕES */
+
+  .review-image {
+    width: 200px; /* increased from 160px */
+    height: 120px; /* increased from 90px */
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+    border: 1px solid #ffffff;
+    object-fit: cover; /* ensure the image is scaled to fit the container */
+  }
+  
+  .review-profile {
+    width: 70px; /* increased from 50px */
+    height: 70px; /* increased from 50px */
+    border-radius: 50%;
+    margin: 10px;
+    float: right;
+    border: 1px solid #ffffff;
+  }

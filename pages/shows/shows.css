@@ -1,33 +1,48 @@
-.AnaCanas img {
-    display: block;
-    width: 50vw;
-    /* padding:60cm;
-    border:80cm; */
-    padding: 2rem 0;
-    margin: 0 auto;
-}
 
-.shows-container h3, .shows-container h2 {
-    text-decoration:aliceblue; 
-   
-}
+  .container-teatro {
 
-.shows-container h1 {
-    text-align: center;
-}
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 20px;
+    
+  }
+  
+  .container .list .list-card{
+    width: 250px;
+    height: 30%;
+    background-color: #ffffff;
+    /* background-color: blue; */
+    margin: 15px;
+    border-radius: 10px;
+  }
+  
+  .container .list .list-card img {
 
+    height: 150px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 
-.shows-container .info {
-    margin: 1rem;
-    border: 1px solid black;
-    padding: 1rem;
+  .container .list .list-item .content .titulo{
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.3em;
+  }
+  
+  .container .list .list-item .content .descript{
+    font-size: 2.5em;
+  }
 
-}
-.shows-container .banner {
-    /* background-color: grey; */
-    border:  1px solid black    ;
-}
-.shows-container .banner img {
-    width: 50%;
-    max-height: none; 
-}
+  .container .list .list-card .content .button {
+      display:none;
+    & h4{
+        display: none;
+    }
+  }
+
+  }

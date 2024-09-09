@@ -35,7 +35,7 @@ header.acessibilidade button {
 }
 section.categoria-container.lightdefault,
 section.categoria-container.lightspecial {
-	background-color: #750000;
+	background-color: #3f88c5;
 	color: var(--white);
 	/* font-size: 18pt; */
 }

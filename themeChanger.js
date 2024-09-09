@@ -32,7 +32,7 @@ function setCurrentTheme(theme) {
 
 function setDarkTheme() {
 	const lightElements = Array.from(document.querySelectorAll(".lightdefault, .lightspecial"))
-	searchbar.style.borderRadius = "4px"
+	// searchbar.style.borderRadius = "4px"
 	lightElements.forEach((element) => {
 		// console.log(element,element.classList)
 		if ([...element.classList].includes("lightspecial")) {
@@ -49,8 +49,8 @@ function setDarkTheme() {
 }
 function setLightTheme() {
 	const darkElements = Array.from(document.querySelectorAll(".dark, .darker"))
-	searchbar.style.borderBottom = "1px solid var(--gray-dark)"
-	searchbar.style.borderRadius = "0"
+	// searchbar.style.borderBottom = "1px solid var(--gray-dark)"
+	// searchbar.style.borderRadius = "0"
 	darkElements.forEach((element) => {
 		if ([...element.classList].includes("darker")) {
 			// element.classList.remove("darker")

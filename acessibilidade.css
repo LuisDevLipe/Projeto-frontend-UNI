@@ -28,7 +28,7 @@
 		justify-content: space-between;
 		align-items: center;
 		text-align: justify;
-
+		
 		font-family: "DM sans", "Nunito sans", arial;
 		line-height: 1.5rem;
 		img {
@@ -38,7 +38,7 @@
 			object-fit: cover;
 			margin: 0 auto;
 		}
-
+		
 		button {
 			color: inherit;
 			border-radius: 8px;
@@ -47,7 +47,7 @@
 			line-height: var(--big-txt);
 			padding: 1rem;
 			border: 1px solid transparent;
-		transition: all 0.05s ease-in;	
+			transition: all 0.05s ease-in;	
 		}
 		button:hover {
 			border-radius: 4px;
@@ -66,7 +66,7 @@
 	}
 	& .modal-box.darker {
 		box-shadow: -10px -20px 5px 8px rgba(0, 0, 0, 0.511),
-			5px 10px 5px 2px rgba(145, 145, 145, 0.511);
+		5px 10px 5px 2px rgba(145, 145, 145, 0.511);
 		background: var(--gray-dark);
 	}
 }
@@ -77,30 +77,32 @@
 
 .animar-area-acessibilidade {
 	animation-name: animar-area-acessibilidade;
-	animation-duration: 4s;
-	animation-timing-function:ease;
+	animation-duration: 2.7s;
+	animation-timing-function:ease-in-out;
 	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	animation-iteration-count: 1;
 	animation-play-state: running;
-	/* animation-direction: alternate; */
+	animation-direction: alternate;
+	background: linear-gradient(45deg, transparent 45%, #ff7400 , transparent 55%);
+	background-size: 250%;
+	background-position: left;
+}
+#acessibilidade {
+
+	transition: background 0.5s ease-in;
 }
 
 @keyframes animar-area-acessibilidade {
 	0% {
-		background-color: initial;
+	
 	}
-	1% {
-		background: linear-gradient(45deg, transparent 48%, red , transparent 52%);
-		background-size: 250%;
-		background-position: left;
-	}
-	50% {
+	49% {
 		background-position: right;
 	}
-99% {
 
-}
 	100% {
+		background-position: left;
+		/* background-color: initial; */
 	}
 }
